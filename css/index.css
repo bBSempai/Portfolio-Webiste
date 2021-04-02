@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+#backdrop {
+  background: url(../images/main.png);
+  height: 93.25vh;
+  filter: blur(20px);
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.parallaxImageContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 93.25vh;
+  width: 100%;
+  perspective: 1px;
+  border-bottom: 1px solid #000;
+}
+
+.parallaxImageContainer .parallaxImage {
+  background: url(../images/main.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.8);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  opacity: 0.9;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  list-style: none;
+  height: 6.75vh;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 3px 1px rgb(0 0 0 / 8%);
+}
+
+.navbar .navigation {
+  height: 6.75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navigation li {
+  height: 100%;
+  width: 10vw;
+}
+
+.navbar .navigation li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c2c2c;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar .navigation li a:hover {
+  background-color: crimson;
+  color: #fff;
+}
+
+.navbar .navigation li a:active {
+  background-color: #eeeeee;
+  color: #2c2c2c;
+}
+
+.navbar #logo {
+  position: absolute;
+  float: right;
+  right: 0.5em;
+  height: 100%;
+  font-family: "Redressed", cursive;
+  font-size: 6vh;
+}
+
+.navbar #logo a {
+  color: crimson;
+}
+.navbar #logo a:visited {
+  color: rgb(220, 20, 60);
+}
+
+.bgContainer {
+  position: absolute;
+  height: 93.25vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 20vh;
+}
+
+.bgContainer .bgText {
+  text-align: center;
+  font-family: "Acme", sans-serif;
+}
+
+#skills {
+  background-image: linear-gradient(to right, #1d1d1d, #111111);
+  height: 105vh;
+}
+
+#skills h1 {
+  padding-top: 20vh;
+  font-family: "Acme", sans-serif;
+  font-size: 10vh;
+  text-align: center;
+  color: crimson;
+}
+
+#skills ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Acme", sans-serif;
+  color: #cecac3;
+}
+
+#skills ul .item {
+  text-align: center;
+  padding: 3em;
+}
+
+#skills ul .item li {
+  font-size: 15vh;
+}
+
+#skills ul .item .caption {
+  font-size: 5vh;
+}
+
+#footer {
+  border-top: 0.5px solid #cecac3;
+  background: #000;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cbdae4;
+}
+
+#footer .footerIconContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#footer .footerIconContainer .footerIcon {
+  font-size: 3.5vh;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+#footer .footerIconContainer .footerIcon a{
+  color: #cbdae4;
+}
+
+#footer .footerIconContainer .footerIcon a:visited{
+  color: #cbdae4;
+}
